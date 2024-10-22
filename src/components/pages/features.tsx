@@ -76,7 +76,7 @@ export default function Features() {
           <div className="w-full md:w-1/2 px-4">
             <h2 className="text-xl font-bold py-2">{val.data_}</h2>
             <p className="text-gray-700 mb-3">{val.para}</p>
-            {val.subdata && <p className="text-gray-600">{val.subdata}</p>}
+            <p className="text-gray-600">{val.subdata}</p>
           </div>
         </div>
       ))}
