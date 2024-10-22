@@ -1,7 +1,17 @@
 import { useState } from "react";
 
+interface PlanCardProps {
+  type: string;
+  data: string;
+  monthlyCost: string;
+  annualCost: string;
+  description: string;
+  btn: string;
+  isMonthly: boolean;
+}
+
 // PlanCard component
-const PlanCard = ({
+const PlanCard: React.FC<PlanCardProps> = ({
   type,
   data,
   monthlyCost,
